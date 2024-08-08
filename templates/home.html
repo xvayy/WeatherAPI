@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flask My Web page</title>
+</head>
+<body>
+    <nav>
+        <a href="home/">Home</a>
+        <a href="/about/">About</a>
+    </nav>
+    <h1>Weather API</h1>
+    <!--<img src="{{url_for('static', filename='cat.png')}}", style="width: 500px">-->
+    <p>URL format: http://127.0.0.1:5000/api/v1/station/data</p>
+    <p>URL Example for one date <a href="http://127.0.0.1:5000/api/v1/10/2020-11-27">http://127.0.0.1:5000/api/v1/10/2020-11-27</a></p>
+    <p>URL Example for all date <a href="http://127.0.0.1:5000/api/v1/10">http://127.0.0.1:5000/api/v1/10</a></p>
+    <p>URL Example for full year <a href="http://127.0.0.1:5000/api/v1/yearly/10/2020">http://127.0.0.1:5000/api/v1/yearly/10/2020</a></p>
+    <p>{{data|safe}}</p>
+</body>
+</html>
